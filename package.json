@@ -1,5 +1,5 @@
 {
-  "name": "@helpfulhuman/koa-route",
+  "name": "helpful-koa-routing",
   "version": "1.0.0",
   "description": "A functional routing library for Koa.",
   "main": "index.js",
@@ -12,8 +12,11 @@
   },
   "keywords": [
     "koa",
+    "route",
+    "router",
     "routing",
-    "functional"
+    "functional",
+    "helpful"
   ],
   "author": "helpful Human <hello@helpfulhuman.com>",
   "license": "MIT",

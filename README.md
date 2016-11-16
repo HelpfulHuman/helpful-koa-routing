@@ -1,4 +1,4 @@
-# Koa Route
+# Helpful Koa Routing
 
 A functional routing library for [koa](http://koajs.com/).  Heavily inspired by [koa-route](https://www.npmjs.com/package/koa-route), but with a few adjustments.
 

@@ -1,0 +1,29 @@
+{
+  "name": "@helpfulhuman/koa-route",
+  "version": "1.0.0",
+  "description": "A functional routing library for Koa.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/HelpfulHuman/koa-route.git"
+  },
+  "keywords": [
+    "koa",
+    "routing",
+    "functional"
+  ],
+  "author": "helpful Human <hello@helpfulhuman.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HelpfulHuman/koa-route/issues"
+  },
+  "homepage": "https://github.com/HelpfulHuman/koa-route#readme",
+  "dependencies": {
+    "debug": "^2.3.2",
+    "koa-compose": "^2.5.1",
+    "path-to-regexp": "^1.7.0"
+  }
+}

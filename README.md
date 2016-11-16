@@ -9,13 +9,13 @@ A functional routing library for [koa](http://koajs.com/).  Heavily inspired by 
 Install the package via `npm`:
 
 ```
-npm install --save @helpfulhuman/koa-route
+npm install --save helpful-koa-routing
 ```
 
 Then require it like so...
 
 ```js
-const route = require('@helpfulhuman/koa-route');
+const route = require('helpful-koa-routing');
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ This library exposes functions that make your existing middleware only response 
 * `DELETE()` for `DELETE` requests.
 
 ```js
-const { route, GET } = require('@helpfulhuman/koa-route');
+const { route, GET } = require('helpful-koa-routing');
 
 app.use(GET('/', middleware));
 app.use(route(['POST', 'PUT'], '/', middleware));

@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/HelpfulHuman/koa-route.git"
+    "url": "git+ssh://git@github.com/HelpfulHuman/helpful-koa-routing.git"
   },
   "keywords": [
     "koa",
@@ -21,9 +21,9 @@
   "author": "helpful Human <hello@helpfulhuman.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/HelpfulHuman/koa-route/issues"
+    "url": "https://github.com/HelpfulHuman/helpful-koa-routing/issues"
   },
-  "homepage": "https://github.com/HelpfulHuman/koa-route#readme",
+  "homepage": "https://github.com/HelpfulHuman/helpful-koa-routing#readme",
   "dependencies": {
     "debug": "^2.3.2",
     "koa-compose": "^2.5.1",

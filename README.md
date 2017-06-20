@@ -28,10 +28,10 @@ This library exposes functions that make your existing middleware only response 
 * `DELETE()` for `DELETE` requests.
 
 ```js
-const { route, GET } = require('helpful-koa-routing');
+const { route, GET } = require("helpful-koa-routing");
 
-app.use(GET('/', middleware));
-app.use(route(['POST', 'PUT'], '/', middleware));
+app.use(GET("/", middleware));
+app.use(route(["POST", "PUT"], "/", middleware));
 ```
 
 ### Route Parameters
@@ -39,8 +39,8 @@ app.use(route(['POST', 'PUT'], '/', middleware));
 Path parameters, similar to [Express](http://expressjs.com/), can also be used.  These will be made available on your context as a `params` object.
 
 ```js
-GET('/greet/:name', function *() {
-  this.body = 'Hello, ' + this.params.name;
+GET("/greet/:name", function (ctx) {
+  ctx.body = `Hello,  ${ctx.params.name}`;
 });
 ```
 
@@ -51,12 +51,12 @@ Typically, it's encouraged to use [koa-compose]() to combine multiple middleware
 To use multiple middleware, simply provide an array of middleware instead of a single middleware function.
 
 ```js
-GET('/', [
-  function *(next) {
-    yield next;
+GET("/", [
+  function (ctx, next) {
+    return next();
   },
-  function *() {
-    this.body = 'middleware 2 fired';
+  function (ctx) {
+    ctx.body = 'middleware 2 fired';
   }
 ]);
 ```

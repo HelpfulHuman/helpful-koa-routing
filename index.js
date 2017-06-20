@@ -53,16 +53,16 @@ function route (method, path, middleware) {
   if (Array.isArray(middleware)) {
     middleware = compose(middleware);
   }
-  return function *(next) {
+  return function (ctx, next) {
     if (matches(method, this.method)) {
-      const params = getParams(path, this);
+      const params = getParams(path, ctx);
       if (params) {
-        debug('%s %s matches %s %j', this.method, path, this.path, params);
-        this.params = params;
-        return yield middleware;
+        debug('%s %s matches %s %j', ctx.method, path, ctx.path, params);
+        ctx.params = params;
+        return middleware();
       }
     }
-    yield next;
+    return next();
   };
 }
 

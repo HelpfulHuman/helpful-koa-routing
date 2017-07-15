@@ -1,6 +1,6 @@
 # Helpful Koa Routing
 
-A functional routing library for [koa](http://koajs.com/).  Heavily inspired by [koa-route](https://www.npmjs.com/package/koa-route), but with a few adjustments.
+A functional routing library for [koa](http://koajs.com/).  Heavily inspired by [koa-route](https://www.npmjs.com/package/koa-route), but with a few adjustments.  This version of the library is meant to be used with Koa v2 and supports promises over generators.
 
 > **Note:** Many of the examples in this documentation use ES2015 destructuring.  ES2015 is _not_ required to use this library!
 

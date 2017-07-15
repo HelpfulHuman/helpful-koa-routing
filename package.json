@@ -1,6 +1,6 @@
 {
   "name": "helpful-koa-routing",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "description": "A functional routing library for Koa.",
   "main": "index.js",
   "scripts": {

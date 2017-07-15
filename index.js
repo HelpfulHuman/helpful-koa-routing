@@ -54,7 +54,7 @@ function route (method, path, middleware) {
     middleware = compose(middleware);
   }
   return function (ctx, next) {
-    if (matches(method, this.method)) {
+    if (matches(method, ctx.method)) {
       const params = getParams(path, ctx);
       if (params) {
         debug('%s %s matches %s %j', ctx.method, path, ctx.path, params);

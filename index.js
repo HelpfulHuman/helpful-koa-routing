@@ -59,10 +59,10 @@ function route (method, path, middleware) {
       if (params) {
         debug('%s %s matches %s %j', ctx.method, path, ctx.path, params);
         ctx.params = params;
-        return middleware();
+        return middleware(ctx, next);
       }
     }
-    return next();
+    return next(ctx, next);
   };
 }
 

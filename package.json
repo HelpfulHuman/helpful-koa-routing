@@ -26,7 +26,7 @@
   "homepage": "https://github.com/HelpfulHuman/helpful-koa-routing#readme",
   "dependencies": {
     "debug": "^2.3.2",
-    "koa-compose": "^2.5.1",
+    "koa-compose": "^4.0.0",
     "path-to-regexp": "^1.7.0"
   }
 }
